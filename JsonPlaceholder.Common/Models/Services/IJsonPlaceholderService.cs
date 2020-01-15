@@ -4,6 +4,7 @@ using System.Text;
 
 namespace JsonPlaceholder.Common.Models.Services
 {
+    // Service for accessing https://jsonplaceholder.typicode.com/
     public interface IJsonPlaceholderService
     {
         List<User> GetUsers();
