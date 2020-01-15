@@ -4,7 +4,7 @@ Repository containg training exercises
 # JsonPlaceholder
 Exercises to introduce uses to accessing APIs, creating class libraries and returning data via API and Function.
 
-1. JsonPlaceholder.Common - Class Library
+1. JsonPlaceholder.Common - Class Library - https://jsonplaceholder.typicode.com/
    * Update Album, Photo and User properties
    * Implement API methods in JsonPlaceholderHttpService
    * Implement API methods in JsonPlaceholderRestSharpService
