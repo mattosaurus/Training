@@ -2,9 +2,9 @@
 Repository containg training exercises
 
 # JsonPlaceholder
-Exercises to introduce uses to accessing APIs, creating class libraries and returning data via API and Function.
+Exercises to introduce uses to accessing APIs, creating class libraries and returning data via API and Function. The service should provide access to the [JsonPlaceholder](https://jsonplaceholder.typicode.com/) API and can be tested in the API by using a URL such as https://localhost:44368/JsonPlaceholder/User or in the Function by calling http://localhost:7071/api/User
 
-1. JsonPlaceholder.Common - Class Library - https://jsonplaceholder.typicode.com/
+1. JsonPlaceholder.Common - Class Library
    * Update Album, Photo and User properties
    * Implement API methods in JsonPlaceholderHttpService
    * Implement API methods in JsonPlaceholderRestSharpService
