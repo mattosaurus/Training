@@ -4,13 +4,14 @@ using System.Linq;
 using System.Threading.Tasks;
 using JsonPlaceholder.Common.Models;
 using JsonPlaceholder.Common.Models.Clients;
+using JsonPlaceholder.Common.Models.Services;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 
 namespace JsonPlaceholder.Api.Controllers
 {
     [ApiController]
-    [Route("[controller]")]
+    [Route("[controller]/[action]")]
     public class JsonPlaceholderController : ControllerBase
     {
         private readonly IJsonPlaceholderClient _jsonPlaceholderClient;
@@ -19,6 +20,8 @@ namespace JsonPlaceholder.Api.Controllers
         public JsonPlaceholderController()
         {
             // Create client here initially and then move to creating it in Startup and passing through to controller using Dependency Injection
+            IJsonPlaceholderService jsonPlaceholderService = new JsonPlaceholderHttpService("https://jsonplaceholder.typicode.com/");
+            _jsonPlaceholderClient = new JsonPlaceholderClient(jsonPlaceholderService);
             // https://docs.microsoft.com/en-us/aspnet/core/fundamentals/dependency-injection?view=aspnetcore-3.1
             // Then inject a logger and use to log requests
         }
